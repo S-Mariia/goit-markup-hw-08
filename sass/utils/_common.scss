@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+  
+    color: var(--main-title-color);
+    background-color: var(--main-background-color);
+  }
+  
+  img {
+display: block;
+min-width: 100px;
+height: auto;
+  }
+
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+
