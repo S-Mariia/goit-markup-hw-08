@@ -58,51 +58,53 @@
               </svg>
             </button>
           </div>
-          <div class="mob-header__invisible-part is-hidden">
-            <div class="mob-header__top">
-              <button class="mob-header__close-btn">
-                <svg class="mob-header__close-icon" width="40" height="40">
-                  <use href="./images/icons.svg#icon-menu-close"></use>
-                </svg>
-              </button>
-              <ul class="mob-menu list">
-                <li class="mob-menu__item">
-                  <a href="./index.html" class="mob-menu__link link">Студия</a>
-                </li>
-                <li class="mob-menu__item">
-                  <a href="./portfolio.html" class="mob-menu__link mob-menu__link--active link"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
-              </ul>
-            </div>
-  
-            <div class="mob-header__bottom">
-              <ul class="mob-contacts list">
-                <li class="mob-contacts__item">
-                  <a href="tel:+380961111111" class="mob-contacts__link link"> +38 096 111 11 11</a>
-                </li>
-                <li class="mob-contacts__item">
-                  <a href="mailto:info@devstudio.com" class="mob-contacts__link link">
-                    info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-              <ul class="mob-soc-media list">
-                <li class="mob-soc-media__item">
-                  <a href="" class="li mob-soc-media__link link">Instagram</a>
-                </li>
-                <li class="mob-soc-media__item">
-                  <a href="" class="li mob-soc-media__link link">Twitter</a>
-                </li>
-                <li class="mob-soc-media__item">
-                  <a href="" class="li mob-soc-media__link link">Facebook</a>
-                </li>
-                <li class="mob-soc-media__item">
-                  <a href="" class="li mob-soc-media__link link">LinkedIn</a>
-                </li>
-              </ul>
+          <div class="mob-menu__backdrop is-hidden">
+            <div class="mob-header__invisible-part is-hidden">
+              <div class="mob-header__top">
+                <button class="mob-header__close-btn">
+                  <svg class="mob-header__close-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu-close"></use>
+                  </svg>
+                </button>
+                <ul class="mob-menu list">
+                  <li class="mob-menu__item">
+                    <a href="./index.html" class="mob-menu__link link">Студия</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a href="./portfolio.html" class="mob-menu__link mob-menu__link--active link"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+                </ul>
+              </div>
+    
+              <div class="mob-header__bottom">
+                <ul class="mob-contacts list">
+                  <li class="mob-contacts__item">
+                    <a href="tel:+380961111111" class="mob-contacts__link link"> +38 096 111 11 11</a>
+                  </li>
+                  <li class="mob-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="mob-contacts__link link">
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mob-soc-media list">
+                  <li class="mob-soc-media__item">
+                    <a href="" class="li mob-soc-media__link link">Instagram</a>
+                  </li>
+                  <li class="mob-soc-media__item">
+                    <a href="" class="li mob-soc-media__link link">Twitter</a>
+                  </li>
+                  <li class="mob-soc-media__item">
+                    <a href="" class="li mob-soc-media__link link">Facebook</a>
+                  </li>
+                  <li class="mob-soc-media__item">
+                    <a href="" class="li mob-soc-media__link link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -137,12 +139,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img1.jpg"
-                    alt="Экран ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img1.jpg    1x,
+                      ./images/portfolio-img1@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img1-tab.jpg    1x,
+                      ./images/portfolio-img1-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img1-mob.jpg    1x,
+                      ./images/portfolio-img1-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img1-mob.jpg" alt="Экран ноутбука" />
+                  </picture> 
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -160,12 +180,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img2.jpg"
-                    alt="Два баскетболиста сражаются за мяч"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img2.jpg    1x,
+                      ./images/portfolio-img2@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img2-tab.jpg    1x,
+                      ./images/portfolio-img2-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img2-mob.jpg    1x,
+                      ./images/portfolio-img2-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img1-mob.jpg" alt="Два баскетболиста сражаются за мяч" />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -185,12 +223,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img3.jpg"
-                    alt="Лого ресторана морепродуктов"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img3.jpg    1x,
+                      ./images/portfolio-img3@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img3-tab.jpg    1x,
+                      ./images/portfolio-img3-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img3-mob.jpg    1x,
+                      ./images/portfolio-img3-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img3-mob.jpg" alt="Лого ресторана морепродуктов" />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -208,7 +264,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img src="./images/portfolio-img4.jpg" alt="Наушники" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img4.jpg    1x,
+                      ./images/portfolio-img4@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img4-tab.jpg    1x,
+                      ./images/portfolio-img4-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img4-mob.jpg    1x,
+                      ./images/portfolio-img4-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img4-mob.jpg" alt="Наушники" />
+                  </picture>
                  <div class="card__overlay">
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -226,12 +305,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img5.jpg"
-                    alt="Две коробки: белая и коричневая"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img5.jpg    1x,
+                      ./images/portfolio-img5@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img5-tab.jpg    1x,
+                      ./images/portfolio-img5-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img5-mob.jpg    1x,
+                      ./images/portfolio-img5-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img5-mob.jpg" alt="Две коробки: белая и коричневая" />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -249,12 +346,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img6.jpg"
-                    alt="Экран макбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img6.jpg    1x,
+                      ./images/portfolio-img6@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img6-tab.jpg    1x,
+                      ./images/portfolio-img6-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img6-mob.jpg    1x,
+                      ./images/portfolio-img6-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img6-mob.jpg" alt="Экран макбука" />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -272,12 +387,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img7.jpg"
-                    alt="Развернутый журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img7.jpg    1x,
+                      ./images/portfolio-img7@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img7-tab.jpg    1x,
+                      ./images/portfolio-img7-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img7-mob.jpg    1x,
+                      ./images/portfolio-img7-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img7-mob.jpg" alt="Развернутый журнал" />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -295,12 +428,30 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img8.jpg"
-                    alt="Этикетка с надписью Lab El Tag"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img8.jpg    1x,
+                      ./images/portfolio-img8@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img8-tab.jpg    1x,
+                      ./images/portfolio-img8-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img8-mob.jpg    1x,
+                      ./images/portfolio-img8-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img8-mob.jpg" alt="Этикетка с надписью Lab El Tag" />
+                  </picture>
                   <div class="card__overlay">
                     <p class="card__overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -318,12 +469,31 @@
             <li class="card">
               <a href="" class="card__link link">
                 <div class="card__image-wrap">
-                  <img
-                    src="./images/portfolio-img8.jpg"
-                    alt="Этикетка с надписью Lab El Tag"
-                    width="370"
-                    height="294"
-                  />
+                 
+                  <picture>
+                    <source
+                      srcset="
+                      ./images/portfolio-img9.jpg    1x,
+                      ./images/portfolio-img9@2x.jpg 2x,
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img9-tab.jpg    1x,
+                      ./images/portfolio-img9-tab@2x.jpg 2x,
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                      ./images/portfolio-img9-mob.jpg    1x,
+                      ./images/portfolio-img9-mob@2x.jpg 2x,
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/portfolio-img9-mob.jpg" alt="Приложение Growing Business открыто на ноутбуке" />
+                  </picture>
                  <div class="card__overlay">
                   <p class="card__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
