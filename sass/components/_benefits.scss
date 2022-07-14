@@ -5,7 +5,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
-  padding-bottom: 94px;
+    padding-bottom: 94px;
   }
 }
 .benefits-list {
@@ -45,15 +45,13 @@
       text-align: center;
     }
   }
-  
+
   &__text {
     line-height: calc(24 / 14);
 
     color: var(--main-text-color);
   }
 }
-
-
 
 /*   -------------------іконки через before--------------
   .benefits-list__item::before{

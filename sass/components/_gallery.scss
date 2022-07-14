@@ -40,13 +40,12 @@
   &__overlay-text {
     font-size: 15px;
     line-height: 1.56;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
 
     @media screen and (min-width: 370px) {
       font-size: 18px;
     }
   }
-
 
   &__description {
     padding: 20px 24px;
@@ -69,8 +68,8 @@
   }
 }
 .card__link {
-  @include transition1(box-shadow); 
-  
+  @include transition1(box-shadow);
+
   &:hover,
   &:focus {
     display: block;
