@@ -14,53 +14,112 @@
   </head>
 
   <body>
-     <header class="header">
+    <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a href="" class="logo link">Web<span class="logo__append--dark">Studio</span></a>
-          <ul class="menu list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link menu__link--active link">Студия</a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
-            </li>
-            <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="desktop-header">
+          <nav class="nav">
+            <a href="" class="logo link">Web<span class="logo__append--dark">Studio</span></a>
+            <ul class="menu list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link link">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link menu__link--active link">Портфолио</a>
+              </li>
+              <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
+            </ul>
+          </nav>
 
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link link">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-letter"></use>
+          <ul class="contacts list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link link">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-letter"></use>
+                </svg>
+                <p class="">info@devstudio.com</p></a
+              >
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <p>+38 096 111 11 11</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mob-header">
+          <div class="mob-header__visible-part">
+            <a href="" class="logo link">Web<span class="logo__append--dark">Studio</span></a>
+            <button class="mob-header__open-btn">
+              <svg class="mob-header__open-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-open"></use>
               </svg>
-              <p class="">info@devstudio.com</p></a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link link">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              <p>+380961111111</p></a
-            >
-          </li>
-        </ul>
+            </button>
+          </div>
+          <div class="mob-header__invisible-part is-hidden">
+            <div class="mob-header__top">
+              <button class="mob-header__close-btn">
+                <svg class="mob-header__close-icon" width="40" height="40">
+                  <use href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link link">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link mob-menu__link--active link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="mob-header__bottom">
+              <ul class="mob-contacts list">
+                <li class="mob-contacts__item">
+                  <a href="tel:+380961111111" class="mob-contacts__link link"> +38 096 111 11 11</a>
+                </li>
+                <li class="mob-contacts__item">
+                  <a href="mailto:info@devstudio.com" class="mob-contacts__link link">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-soc-media list">
+                <li class="mob-soc-media__item">
+                  <a href="" class="li mob-soc-media__link link">Instagram</a>
+                </li>
+                <li class="mob-soc-media__item">
+                  <a href="" class="li mob-soc-media__link link">Twitter</a>
+                </li>
+                <li class="mob-soc-media__item">
+                  <a href="" class="li mob-soc-media__link link">Facebook</a>
+                </li>
+                <li class="mob-soc-media__item">
+                  <a href="" class="li mob-soc-media__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header> 
 
     <main>
       <!--hero-->
-       <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="btn hero__btn" data-modal-open>Заказать услугу</button>
         </div>
-      </section>  -->
+      </section>  
 
       <!--benefits-->
-        <!-- <section class="benefits">
+        <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="benefits-list list">
@@ -110,10 +169,10 @@
             </li>
           </ul>
         </div>
-      </section>   -->
+      </section>  
 
       <!--works-->
-        <!-- <section class="work">
+        <section class="work">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list list">
@@ -131,10 +190,10 @@
             </li>
           </ul>
         </div>
-      </section>   -->
+      </section>  
       
       <!--team-->
-      <!-- <section class="team"> 
+      <section class="team"> 
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
@@ -288,10 +347,10 @@
             </li>
           </ul>
         </div>
-      </section>    -->
+      </section>   
 
       <!--clients-->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list list">
@@ -339,7 +398,7 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section> 
     </main>
 
         <!-- footer -->
@@ -485,5 +544,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

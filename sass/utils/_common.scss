@@ -23,3 +23,12 @@ height: auto;
     text-decoration: none;
   }
 
+  .no-scroll {
+    overflow: hidden;
+  }
+
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
