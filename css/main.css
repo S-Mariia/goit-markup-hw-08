@@ -161,6 +161,11 @@ img {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .header {
@@ -1078,24 +1083,39 @@ img {
   fill: #ffffff;
 }
 
+.mob-modal-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 93px 15px;
+}
+@media screen and (min-width: 480px) {
+  .mob-modal-container {
+    width: 480px;
+  }
+}
+
 .modal {
+  position: relative;
   padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 93%;
-  max-height: 609px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
   .modal {
     padding: 40px;
     width: 450px;
     height: 609px;
+    max-height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1255,7 +1275,7 @@ img {
     line-height: 1.71;
   }
 }
-.mf-checkbox__text > a {
+.mf-checkbox__text a {
   color: var(--accent-color);
 }
 
@@ -1263,9 +1283,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
+  width: 15px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 6px;
   background-color: transparent;
   border: 2px solid var(--main-title-color);
   border-radius: 2px;
@@ -1383,6 +1403,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 100%;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 15px;
@@ -1399,6 +1420,8 @@ img {
   font-size: 16px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  max-height: 100%;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 370px) {
   .card__overlay-text {
@@ -1406,6 +1429,7 @@ img {
   }
 }
 .card__description {
+  flex-grow: 1;
   padding: 20px 24px;
   color: var(--main-title-color);
 }
@@ -1423,6 +1447,9 @@ img {
 }
 
 .card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card__link:hover, .card__link:focus {

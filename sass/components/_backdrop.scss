@@ -6,4 +6,10 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   @include transition2(opacity, visibility);
+
+  overflow-y: scroll;
+  }
+
+body.modal-open {
+  overflow: hidden;
 }
