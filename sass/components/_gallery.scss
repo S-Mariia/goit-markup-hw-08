@@ -18,18 +18,22 @@
 
   &__image-wrap {
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
   }
 
   &__overlay {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     padding-left: 24px;
     padding-right: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
+    overflow-y: scroll;
 
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--second-color);
@@ -38,7 +42,7 @@
   }
 
   &__overlay-text {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.56;
     letter-spacing: 0.03em;
 
@@ -49,6 +53,7 @@
 
   &__description {
     padding: 20px 24px;
+    color: var(--main-title-color);
   }
 
   &__title {

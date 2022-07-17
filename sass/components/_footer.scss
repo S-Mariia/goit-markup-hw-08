@@ -4,14 +4,10 @@
   padding-bottom: 60px;
 
   .container {
+   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding-left: 76px;
-      padding-right: 89px;
-    }
+   } 
   }
 
   .logo {
@@ -25,18 +21,35 @@
       text-align: center;
     }
   }
+
+  &__top {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+    justify-content: space-between;
+    padding-left: 65px;
+    padding-right: 65px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      margin-right: auto;
+    }
+  }
 }
 
 .address-wrap {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
   @media screen and (max-width: 767px) {
     width: 100%;
+    margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: auto;
-  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -73,16 +86,9 @@
 }
 
 .join {
-  @media screen and (min-width: 1200px) {
-    margin-right: auto;
-  }
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-
   @media screen and (max-width: 767px) {
     width: 100%;
+    margin-bottom: 60px;
   }
 
   &__text {
