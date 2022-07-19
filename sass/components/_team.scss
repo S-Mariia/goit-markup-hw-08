@@ -25,9 +25,11 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
 }
 
@@ -70,6 +72,12 @@
     text-align: center;
 
     color: var(--main-text-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sheet:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

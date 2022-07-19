@@ -515,8 +515,6 @@ body.modal-open {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    padding-bottom: 200px;
-    padding-top: 200px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   }
@@ -525,6 +523,12 @@ body.modal-open {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg@2x.jpg);
     background-size: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
 .hero__title {
@@ -578,10 +582,12 @@ body.modal-open {
   }
 }
 
-.benefits-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .benefits-list__item {
   width: 100%;
@@ -620,6 +626,11 @@ body.modal-open {
   color: var(--main-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .benefits-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 /*   -------------------іконки через before--------------
   .benefits-list__item::before{
   content: "";
@@ -709,10 +720,12 @@ body.modal-open {
     font-size: 36px;
   }
 }
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .sheet {
@@ -754,6 +767,11 @@ body.modal-open {
   color: var(--main-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .sheet:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .img__tab {
     display: none;
@@ -984,7 +1002,6 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .join {
     width: 100%;
-    margin-bottom: 60px;
   }
 }
 .join__text {
@@ -1373,10 +1390,12 @@ body.modal-open {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .card {
@@ -1446,6 +1465,11 @@ body.modal-open {
   color: var(--main-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .card__link {
   display: flex;
   flex-direction: column;
