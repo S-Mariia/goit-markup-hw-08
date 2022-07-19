@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
@@ -25,7 +26,9 @@ img {
 }
 
 .no-scroll {
-  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
 }
 
 .is-hidden {
