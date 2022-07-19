@@ -25,10 +25,14 @@ img {
   text-decoration: none;
 }
 
-.no-scroll {
+.no-scroll-mob {
   @media screen and (max-width: 767px) {
     overflow: hidden;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .is-hidden {

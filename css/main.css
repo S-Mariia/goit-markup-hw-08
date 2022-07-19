@@ -61,9 +61,13 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .no-scroll {
+  .no-scroll-mob {
     overflow: hidden;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .is-hidden {
